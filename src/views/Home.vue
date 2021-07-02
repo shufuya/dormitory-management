@@ -52,7 +52,7 @@ export default {
           break
         case 5:
           Notify({ type: 'primary', message: '退出' })
-          this.axios.get({ path: '/admin/dropout' }).then(res => {
+          this.axios.get('/admin/dropout').then(res => {
             if (res) {
               this.$router.push('/login')
               Notify({ type: 'primary', message: '退出成功' })

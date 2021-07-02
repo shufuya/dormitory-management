@@ -6,8 +6,11 @@
 
 <script>
 export default {
-
+  created () {
+    this.axios.get('/dormroom/getdormroom').then(res => console.log(res))
+  }
 }
+
 </script>
 
 <style>

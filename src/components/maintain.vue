@@ -6,7 +6,9 @@
 
 <script>
 export default {
-
+  created () {
+    this.axios.get('/service/getservice').then(res => console.log(res))
+  }
 }
 </script>
 
